@@ -1,0 +1,14 @@
+anguage: java
+
+jdk:
+    - openjdk11
+
+addons: 
+    sonarcloud: 
+        organization: ilcontecvma
+        token: 
+            a7ce466934bb85810f1d0853d6c3ab5c4bdd9165
+
+script: 
+    
+    - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent verify -Pjdk-without-javah,coverage sonar:sonar -Dsonar.projectKey=IlConteCvma_bookkeeper -Dmaven.javadoc.skip=true
