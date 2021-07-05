@@ -11,6 +11,6 @@ addons:
 
 script: 
     
-    - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent test -Pjdk-without-javah sonar:sonar -Dsonar.projectKey=IlConteCvma_bookkeeper -Dmaven.javadoc.skip=true
+    - mvn clean test -Pjdk-without-javah sonar:sonar -Dsonar.projectKey=IlConteCvma_bookkeeper -Dmaven.javadoc.skip=true
     
   
