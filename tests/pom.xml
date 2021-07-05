@@ -29,11 +29,12 @@
 
   <properties>
     <groovy.version>2.5.8</groovy.version>
-    <!--Jacoco properties-->
+    <!--Jacoco properties
     <sonar.coverage.jacoco.xmlReportPaths>${basedir}/../${aggregate.report.dir}</sonar.coverage.jacoco.xmlReportPaths>
+    -->
   </properties>
 
-  <!--Add dependencies whit module tested for Jacoco-->
+  <!--Add dependencies whit module tested for Jacoco
   <dependencies>
     <dependency>
       <groupId>org.apache.bookkeeper</groupId>
@@ -41,7 +42,7 @@
       <version>${project.parent.version}</version>
     </dependency>
   </dependencies>
-
+  -->
   <modules>
   <!--
     <module>shaded</module>
@@ -68,7 +69,7 @@
       </plugin>
 
 
-      <!--Jacoco plugin-->
+      <!--Jacoco plugin
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
@@ -78,10 +79,11 @@
             <goals>
               <goal>report-aggregate</goal>
             </goals>
-            <phase>verify</phase>
+            <phase>test</phase>
           </execution>
         </executions>
       </plugin>
+      -->
 
     </plugins>
   </build>

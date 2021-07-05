@@ -1,4 +1,4 @@
-package org.apache.bookkeeper;
+package org.apache.bookkeeper.bookie;
 
 
 import io.netty.buffer.ByteBuf;
